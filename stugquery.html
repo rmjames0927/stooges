@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yay, Javascript!</title>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.map">
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="name">
+      <input type="submit" name="btn" value="Stoogify!">
+    </form>
+    <ul>
+      <li></li>
+    </ul>
+    <script>
+      $('form').submit(function(ev) {
+        $(this).find('input[name=name]').val();
+      });
+    </script>
+  </body>
+</html>
